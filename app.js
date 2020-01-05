@@ -3,7 +3,8 @@ const app = express();
 const mongodb = require("mongodb");
 const mongoclient = mongodb.MongoClient;
 const routes = require('./routes/routes.js');
-const port = 1234
+const port = process.env.PORT || 1234;
+
 
 
 
