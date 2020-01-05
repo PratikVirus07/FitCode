@@ -1,0 +1,201 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+root{
+    font-size: 16px;
+}
+body{
+    /* background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-high-resolution-wallpapers.jpg'); */
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(14, 1, 1, 0.65)), url('../HomepageImages/BackgroundImage.jpg'); */
+    background-color: #7fa998;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+}
+
+.navbar{
+    position:fixed;
+    z-index: 1;
+    top:0;
+    width:100vw;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Flamenco', cursive;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.myLogo{
+    color: #ffd800;
+}
+
+.navbar-nav .nav-item .nav-link{
+    margin: 3px 15px;
+    padding:3px 0;
+    font-family: 'Flamenco', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #02a567;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    border:1px solid #fa697c;
+    background-color: #fa697c;
+    color:black;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.trackertitle{
+    border: 1px solid #2f3640;
+    border-radius: 40px;
+    width:50vw;
+    text-align: center;
+    margin:25vh auto 5vh;
+    background-color: #2f3640;
+    color: silver;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.mytracker{
+    margin-top:13vh;
+}
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+   
+.search-box:hover > .search-btn {
+    background: white;
+    color: black;
+}
+
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+
+.search-btn > i {
+    font-size: 30px;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-weight: bold;
+}
+
+#resultdiv{
+    display: none;
+}
+.result{
+    margin: 20vh auto 10vh;
+    width:300px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#caloriesid{
+    font-size: 2rem;
+    color: #004445;
+}
+
+.mytable{
+    width:400px;
+}
+
+.trackertitleexercise{
+    border: 1px solid #2f3640;
+    border-radius: 40px;
+    width:50vw;
+    text-align: center;
+    margin:30vh auto 10vh;
+    background-color: #2f3640;
+    color: silver;
+    font-family: 'PT Sans', sans-serif; 
+}
+
+.myform{
+    width:45vw;
+    border:1px solid #2f3640;
+    border-radius: 25px;
+    margin : 5px auto;
+    padding:25px;
+    background-color: #2f3640;
+}
+
+#exerciseid{
+    width:30vw;
+    border: none;
+}
+
+.calcbutton{
+    background-color: #eb4d55;
+    color: #000;
+    border: none;
+    display: block;
+    margin:5px auto;
+}
+
+#exerciseresults{
+    display: none;
+    text-align: center;
+    color: #eb4d55;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width : 720px){
+    #exerciseresults{
+        font-size: 1.4rem;
+    }
+    .trackertitle{
+        font-size: 1.6rem;
+        width:70vw;
+    }
+    .trackertitleexercise{
+        font-size: 1.6rem;
+        width:70vw;
+    }
+}
+
+
+
+
+
+

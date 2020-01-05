@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+root{
+    font-size: 20px;
+}
+body{
+    overflow-x: hidden;
+    color:#fff;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(14, 1, 1, 0.65)), url('HomepageImages/BackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.clearfix:after{
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear:both;
+}
+
+.row{
+    max-width: 1180px;
+    margin:0 auto;
+}
+
+.logo{
+    height: 100px;
+    width:auto;
+    float: left;
+    margin-top: 20px;
+    border-radius: 30%;
+}
+
+.main-nav{
+    float:right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+.main-nav li a{
+    padding:3px 0;
+    color: #02a567;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 130%;
+    font-weight: 500;
+
+}
+
+.main-nav li a:hover{
+    border:1px solid #fa697c;
+    background-color: #fa697c;
+    color:black;
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+
+.mainContent{
+    width:1180px;
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    color: #ffd800;
+    font-size: 300%;
+    word-spacing: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-signup{
+    background-color: transparent;
+    color:#bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+}
+.btn-home{
+    background-color: transparent;
+    color:#fff;
+    border: 1px solid #ffd800;
+}
+
+.btn-signup:hover{
+    background-color: #ffd800;
+    color: black;
+}
+.btn-home:hover{
+    background-color:#bf55ec ;
+}
+
+.colorChange{
+    font-size: 150%;
+    animation: colorchangefitcode 2s infinite;
+}
+
+@keyframes colorchangefitcode {
+    0%{color:rgb(184, 37, 37);}
+    25%{color: rgb(30, 30, 148);}
+    50%{color:rgb(60, 182, 60);}
+    100%{color: rgb(136, 59, 187);}
+}
+
+.mobileicon{
+    display:none;
+}
+
+@media only screen and (max-width:1180px){
+    .mainContent{
+        width:100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width:998px){
+    h1{
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width:768px){
+    h1{
+        font-size: 180%;
+    }
+    .main-nav{
+        display: none;
+    }
+    .mobileicon{
+        display:block;
+        color: #fff;
+        float: right;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+    .main-nav{
+        float: left;
+    }
+
+    .main-nav li{
+        display: block;
+        margin-top:10px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    h1{
+        font-size: 150%;
+    }
+    .btn{
+        margin: 10px ;
+    }
+}
+

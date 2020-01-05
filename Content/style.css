@@ -1,0 +1,521 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+root{
+    font-size: 16px;
+}
+body{
+    /* background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-high-resolution-wallpapers.jpg'); */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(14, 1, 1, 0.65)), url('../HomepageImages/BackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    background-color: #e5dfdf;
+}
+
+.navbar{
+    position:fixed;
+    z-index: 1;
+    top:0;
+    width:100vw;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Flamenco', cursive;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.myLogo{
+    color: #ffd800;
+}
+
+.navbar-nav .nav-item .nav-link{
+    margin: 3px 15px;
+    padding:3px 0;
+    font-family: 'Flamenco', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #02a567;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    border:1px solid #fa697c;
+    background-color: #fa697c;
+    color:black;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.mainContent{
+    width:90vw;
+    margin-left:5vw;
+    margin-top:35vh;
+    font-family: 'Flamenco', cursive;
+    /* font-size: 1.2rem; */
+
+}
+
+.mainContent h1{
+    color: #ffd800;
+    font-size: 300%;
+    word-spacing: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.mainContent .colorChange{
+    font-size: 150%;
+    animation: colorchangefitcode 2s infinite;
+}
+
+@keyframes colorchangefitcode {
+    0%{color:rgb(184, 37, 37);}
+    25%{color: rgb(30, 30, 148);}
+    50%{color:rgb(60, 182, 60);}
+    100%{color: rgb(136, 59, 187);}
+}
+
+.mycardsSection{
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    width: 90vw;
+    margin:50vh auto 10vh;
+}
+.cards{
+    width:33vw;
+}
+.detailsCard{
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://www.mensjournal.com/wp-content/uploads/mf/_crop_mf0217_ot_fitness_01_1.jpg?w=1200&h=630&crop=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.goalCard{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),url("http://c2h4.net/wp-content/uploads/2019/06/onlyfitness_cardio_1706x1280Px_43.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contactCard{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),url("https://www.basic-fit.com/on/demandware.static/-/Library-Sites-basic-fit-shared-library/default/dw12cd98f1/Roots/Blog/Blog-Header/1088x612/18-01-Blog-Fitness-Information-personal-trainer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cardText{
+    margin: 15vw auto;
+}
+.cardText span{
+    font-size: 2.2rem;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    font-family: 'Flamenco', cursive;
+}
+.cardText a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 800;
+    display: block;
+    text-align: center;
+    border: 1px solid #ff105f ;
+    border-radius: 20px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    width: 50%;
+    margin: 5px auto;
+    color: #272727;
+    font-family: 'Flamenco', cursive;
+}
+
+.cardText a:hover{
+    border: 1px solid #8af312;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+.card-body .btn:hover{
+    border: 1px solid #8af312;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+
+.mymodal-header{
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+.mymodal-footer{
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+.mymodal-title{
+    display: block;
+    width:100%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 3px;
+}
+.mymodal-body{
+    background: linear-gradient(to right, #1d8f6b  , #185a9d);
+}
+.mymodal-footer button{
+    background: linear-gradient(to right, #1d8f6b  , #185a9d);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Flamenco', cursive;
+    color: black;
+    letter-spacing: 3px;
+}
+.genderClass{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Flamenco', cursive;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.mainTextfitnessGoals{
+    border: 1px solid #17574d;
+    border-radius: 30px;
+    background-color: #17574d;
+    width: 70vw;
+    margin: 20px auto;
+    text-align: center;
+}
+.mainTextfitnessGoals h1{
+    font-size: 3rem;
+    font-family: serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #f6e1e1;
+}
+
+.card{
+    background-color: #078492;
+    border-radius: 20px;
+    /* height: 55vh; */
+}
+
+.fitnessGoalsContainer .container .row{
+    margin-bottom: 25px;
+}
+
+
+.fitnessGoalsContainer .container .row .card-title{
+    border: 1px solid #ff896b;
+    border-radius: 20px;
+    background : linear-gradient(to right, #e75c8a, #af7708);;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fitnessGoalsContainer .container .row .btn{
+    border: 1px solid #078d8f;
+    display: block;
+    width:70%;
+    margin:2px auto;
+    border-radius: 20px;
+    background-color:#42e6a4;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.fitnessGoalsContainer .container .row .card-text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+
+.fitnessGoalsContainer .container .row .card-img-top{
+    height:200px;
+    border-radius: 20px;
+}
+.text-footer{
+    color:#000000;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: serif;
+}
+
+.contactUsContainer{
+    border:1px solid black;
+    background-color: #1f1c1c;
+    /* height: 95%; */
+    margin-top:10vh;
+}
+ .contactUsHeader{
+     font-size: 1.5rem;
+     letter-spacing: 2px;
+     width:40vw;
+     margin: 15vh auto 5vh;
+     text-align: center;
+     color: #f4f4f4;
+     text-transform: uppercase;
+ }
+
+ .contactUsmainText{
+     width:70vw;
+     margin:5vh auto 5vh;
+     font-size: 2rem;
+     color: #ffffff;
+     text-align: center;
+     font-weight: 700;
+ }
+ .contactUsStatistics{
+     display: flex;
+     width: 80vw;
+     height:30vh;
+     margin:5vh auto 5vh;
+     text-align: center;
+ }
+.statisticsNumber{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #46b5d1;
+}
+.statisticsText{
+    width:80%;
+    margin: 1px auto;
+    color: #dff6f0;
+    font-size: 1rem;
+}
+
+.ourCompany{
+    text-align: center;
+    width:25vw;
+    margin:2vh auto;
+}
+.ourCompany a{
+    text-decoration: none;
+    color: #51eaea;
+    font-weight: 700;
+}
+ .featured{
+     /* margin: 1 auto 0vh; */
+     background-color: #ffffff;
+     border: 1px solid #ffffff;
+ }
+ .featuredText{
+     text-align: center;
+     width: 50vw;
+     margin:3vh auto;
+ }
+
+ .featuredText h3{
+     font-size: 1rem;
+     font-weight: 700;
+     letter-spacing: 2px;
+     word-spacing: 2px;
+ }
+
+ .featuredCompanies{
+     display: flex;
+     width:80vw;
+     justify-content: space-around;
+    margin: 12vh auto;
+    margin-bottom: 12vh;
+ }
+
+
+ .fitnesspath{
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+ }
+
+ .newtonschool{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+ }
+
+ .fitness{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-stretch: extra-expanded;
+    text-align: center;
+ }
+
+ .thedailypost{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+ }
+
+ .indianittrends{
+    font-family: 'Domine', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+ }
+
+
+.tryitOutContainer{
+    background-color: #617be3;
+    border:1px solid #617be3;
+}
+.tryitout{
+    display: flex;
+    justify-content: space-around;
+    margin:12vh auto ;
+}
+
+.tryouttext{
+    font-family: 'Flamenco', cursive;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.getstarted{
+    border: 1px solid #1f1c1c;
+    border-radius: 5px;
+    width: 20vw;
+    background-color: #1f1c1c;
+    text-align: center;
+}
+
+
+.getstarted span{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+.myFooter{
+    background-color: #1f1c1c;
+    padding-top: 35px;
+}
+
+.segment h2{
+    color: #42e6a4;
+    font-family: 'Flamenco', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footerfitcodetext{
+    color: #dff6f0;
+    font-family: 'Flamenco', cursive;
+    font-size: 1.3rem;
+}
+
+.footerlinks{
+    list-style: none;
+}
+.footerlinks a{
+    text-decoration: none;
+    display: block;
+    width: 15vw;
+    border-left: 0;
+	border-right: 0;
+	border-top: 0;
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+    color: #dff6f0;
+}
+
+.socialmedia {
+    height:50px;
+    width:50px;
+    display: inline-block;
+    background: #7a7975;
+    border-radius: 50%;
+}
+.socialmedia i{
+    color: #fff;
+    font-size: 30px;
+    padding:10px;
+}
+.footer-bottom-text{
+    background-color: #000000;
+    height: 8vh;
+    text-align: center;
+    padding-top: 15px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: 'Flamenco', cursive;
+
+}
+
+
+@media only screen and (max-width:960px){
+    .mainTextfitnessGoals h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:720px){
+    /* .mainTextfitnessGoals{
+        margin-top: 40vh;
+    } */
+    .mainTextfitnessGoals h1{
+        font-size: 2rem;
+    }
+    .mycardsSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70vh;
+        width: 90vw;
+        margin:80vh auto 60vh;
+    }
+    .cards{
+        width:90vw;
+    }
+    .featuredCompanies{
+        display: flex;
+        flex-direction: column;
+        width:80vw;
+        justify-content: space-around;
+       margin: 12vh auto;
+       margin-bottom: 12vh;
+    }
+    .contactUsmainText{
+        font-size: 1.5rem;
+    }
+    .statisticsNumber{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .statisticsText{
+        font-size: 1rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width:448px){
+    .mainTextfitnessGoals h1{
+        font-size: 2rem;
+    }
+    .statisticsText{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

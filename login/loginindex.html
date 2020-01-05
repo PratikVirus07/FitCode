@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="loginstyle.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <title>Sign In/Sign Up Form</title>
+</head>
+<body>
+   
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="loginfunction()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="registerfunction()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="./images/fb.png">
+                <img src="./images/gp.png">
+                <img src="./images/tw.png">
+            </div>
+            <span id="wrongpasswordclass">Wrong Password</span>
+                <span id="userdoesnotexistclass">User Doesnot exist!!</span>
+            <form class="input-group" id="login" >
+                <input type="text" class="input-field" id="loginemailid" placeholder="Email Id" required>
+                <input type="password" class="input-field" id="loginpassword" placeholder="Password" required>
+                <input type="checkbox" class="check-box" required><span>Remember Password</span>
+                
+                <button type="button" class="submit-btn" id="loginsubmit" onclick="checkIfUserExist()">Login</button>
+            </form>
+            <form class="input-group" id="register" >
+                <input type="text" class="input-field" id="signupusername" placeholder="User Name" required>
+                <input type="email" class="input-field" id="signupemailid" placeholder="Email Id" required>
+                <input type="password" class="input-field" id="signuppassword" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to Terms and Conditions</span>
+                <button type="button" class="submit-btn" onclick="addLoginDetailsToDatabase()" >Signup</button>
+            </form>
+        </div>  
+    </div>
+
+
+    
+    <script src="loginscript.js"></script>
+
+</body>
+</html>

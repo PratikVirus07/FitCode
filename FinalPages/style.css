@@ -1,0 +1,423 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+root{
+    font-size: 16px;
+}
+body{
+    /* background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Fitness-high-resolution-wallpapers.jpg'); */
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(14, 1, 1, 0.65)), url('../HomepageImages/BackgroundImage.jpg'); */
+    background-color: #c9b6e4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+}
+
+.navbar{
+    position:fixed;
+    z-index: 1;
+    top:0;
+    width:100vw;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Flamenco', cursive;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.myLogo{
+    color: #ffd800;
+}
+
+.navbar-nav .nav-item .nav-link{
+    margin: 3px 15px;
+    padding:3px 0;
+    font-family: 'Flamenco', cursive;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #02a567;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    border:1px solid #fa697c;
+    background-color: #fa697c;
+    color:black;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.mygoalcontainer{
+    margin-top: 15vh;
+}
+.containerTitle{
+    text-align: center;
+    width: 70%;
+    margin: 5vh auto 5vh;
+}
+.containerTitle h3{
+    font-size: 3rem;
+    font-weight:700;
+    border: 1px solid #0f4c75;
+    background-color: #0f4c75;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+    font-weight: 900;
+}
+
+
+.row{
+    margin:10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flip-card {
+    background-color: transparent;
+    display: inline-block;
+    width: 25vw;
+    height: 50vh;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .indCard h3{
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      border: 1px solid #004445;
+      background-color: #004445;
+      border-radius: 10px;
+      font-family: 'Flamenco', cursive;
+  }
+  .indCard img{
+    width: 100%;
+    height: 100%;
+  }
+
+p{
+    font-family: 'Flamenco', cursive;
+    font-size: 1.2rem;
+}
+h1{
+    font-family: 'Flamenco', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #9d2503;
+
+}
+
+.mydiet h2{
+    border: 1px solid red;
+}
+
+.mycalorieform{
+    border: 1px solid #2c786c;
+    border-radius: 20px;
+    color: black;
+    width:40vw;
+    margin:5vh auto;    
+    background: #2c786c;
+}
+.myform{
+    margin: 20px 20px;
+}
+.genderClass{
+    border: 1px solid #2c786c;
+    text-align: center;
+    width: 15vw;
+    margin: 20px auto;
+    font-size: 1.2rem;;
+}
+
+.mybtn{
+    border: 1px solid #ff896b;
+    width: 100px;
+    display: block;
+    margin: 2px auto;
+    background-color: #ff896b;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#resultCard{
+    display: none;
+    width:70vw;
+    margin: 20px auto;
+    background-color: #ecd37f;
+    
+}
+.card-title{
+    border: 1px solid #ff896b;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: #f15b36;
+    margin: 5px auto;
+    text-align: center;
+    width: 25vw;
+    height: auto;
+}
+
+.card-text{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.values{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.resultButton{
+    border: 1px solid #ff896b;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 2px auto;
+    background-color: #ff896b;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.nutrientContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.indnutrientContainer{
+    text-align: center;
+}
+.indnutrientContainer h3{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 700;
+    background-color: #f15b36;
+    text-align: center;
+    width:20vw;
+    border-radius: 15px;
+}
+.indnutrientContainer span{
+    font-size: 1.2rem;
+    color: rgb(4, 68, 165);
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.foodcontainer h3{
+    font-size: 3rem;
+    font-weight:700;
+    border: 1px solid #0f4c75;
+    background-color: #0f4c75;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+    font-weight: 900;
+    width: 60vw;
+    margin: 10px auto;
+    text-align: center;
+}
+.foodmaterials{
+    margin-top: 15px;
+    display:flex;
+    justify-content: space-around;
+    background-color: grey;
+}
+.chickenFood{
+background: url("../HomepageImages/chicken.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+.brownriceFood{
+    background: url("../HomepageImages/brownrice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.tofuFood{
+    background: url("../HomepageImages/tofu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.bananaFood{
+    background: url("../HomepageImages/banana.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.fishFood{
+    background: url("../HomepageImages/fish.cms");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.vegetablesFood{
+    background: url("../HomepageImages/vegetables.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.oatsFood{
+    background: url("../HomepageImages/oats.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.eggsFood{
+    background: url("../HomepageImages/eggs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.indfood h2{
+    border: 1px solid #2c786c;
+    text-align: center;
+    width: 15vw;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color:#2c786c ;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width:960px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    } 
+    .flip-card {
+        width: 60vw;
+        height: 60vh;
+        display: block;
+        margin: 5px auto;
+      }  
+      .mycalorieform{
+        width:70vw;
+        margin:5vh auto;    
+    }
+    .genderClass{
+        width: 10vw;
+    }
+    .resultButton{
+        width: 20vw;
+        height: auto;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:720px){ 
+    .flip-card {
+        width: 80vw;
+        height: 60vh;  
+      }  
+      .mycalorieform{
+        width:70vw;
+        margin:5vh auto;    
+    }
+    .genderClass{
+        width: 40vw;
+    }
+    .resultButton{
+        width: 20vw;
+        height: auto;
+        font-size: 1rem;
+    }
+    .nutrientContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .indnutrientContainer h3{
+        font-size: 1.2rem;
+        width:40vw;
+        border-radius: 10px;
+    }
+    .foodmaterials{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .indfood h2{
+        width: 25vw;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .containerTitle h3{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:480px){ 
+    .flip-card {
+        width: 90vw;
+        height: 60vh;  
+      }  
+      p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.3rem;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        color: #9d2503;
+    
+    }
+}
+
+
+
+
