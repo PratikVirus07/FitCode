@@ -21,7 +21,8 @@ function loginfunction(){
     btn.style.left = "0px";
 }
 
-var loginURL = "http://127.0.0.1:1234/myapis/"
+// var loginURL = "http://127.0.0.1:1234/myapis/"
+var loginURL = "https://evening-harbor-00200.herokuapp.com/myapis/"
 
 async function addLoginDetailsToDatabase(){
     wrongpasswordclass.style.display = "none";
