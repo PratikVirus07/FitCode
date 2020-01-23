@@ -38,6 +38,5 @@ mongoclient.connect(db_uri, (error, db_client) => {
     app.listen(port, ()=>{
         console.log("Server started and working");
     })
-    
 })
 

@@ -67,6 +67,11 @@ module.exports = function(app, db){
                     })
                 }
             })
+        }else{
+            res.status(400).send({
+                message:"Please enter something",
+                // isAuthenticated:"User doesnot exist"
+            })  
         }
     })
 

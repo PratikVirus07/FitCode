@@ -26,7 +26,7 @@ var loginURL = "https://evening-harbor-00200.herokuapp.com/myapis/"
 
 async function addLoginDetailsToDatabase(){
     wrongpasswordclass.style.display = "none";
-            userdoesnotexistclass.style.display = "none";
+    userdoesnotexistclass.style.display = "none";
     console.log("Signingup")
     var dbusername = signupusername.value;
     var dbemailid = signupemailid.value;
@@ -77,10 +77,11 @@ async function checkIfUserExist(){
         // /window.location ="success.html";
     }).then(res =>{
         let data= res;
+        //console.log(data)
         console.log(data.isAuthenticated);
         // console.log("2nd promise")
         var userName = data.userName
-        if (data.isAuthenticated == "password match"){
+        if (data.isAuthenticated === "password match"){
             welcomeAfterAunthentication(userName);
         }
         else if (data.isAuthenticated == "password doesnot match"){
@@ -91,6 +92,7 @@ async function checkIfUserExist(){
             userdoesnotexistclass.style.display = "block";
             wrongpasswordclass.style.display = "none";
         }
+
     })   
 }
 // check how we can do this for individual user
