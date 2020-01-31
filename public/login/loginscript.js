@@ -97,6 +97,8 @@ async function checkIfUserExist(){
 }
 // check how we can do this for individual user
 function welcomeAfterAunthentication(userName){
+    document.cookie = userName + ";path=/Content"
+
     window.location ="../Content/index.html"
 }
 
