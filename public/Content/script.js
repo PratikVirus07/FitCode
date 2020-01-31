@@ -9,7 +9,7 @@ var activitylevel = document.getElementById("activitylevel");
 var musclegainbutton = document.getElementById("musclegainbutton");
 var musclebuildingmodalinputusername = document.getElementById("musclebuildingmodalinputusername");
 const cookieUserName = document.cookie;
-console.log("content " , cookieUserName);
+console.log(cookieUserName);
 
 function calculateCalories(){
     if (male.checked)
