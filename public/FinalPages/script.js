@@ -19,8 +19,8 @@ var reqdvalue = document.getElementById("reqdvalue");
 // var endurance = document.getElementById("endurance");
 // var conditioning = document.getElementById("conditioning");
 
-const cookieUserName = document.cookie;
-console.log(cookieUserName);
+const cookieUserNamef = document.cookie;
+console.log("finalfages " , cookieUserNamef);
 
 var resultBMI;
 function calculateBMIandCalories(){
