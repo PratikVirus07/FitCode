@@ -21,8 +21,8 @@ function loginfunction(){
     btn.style.left = "0px";
 }
 
-// var loginURL = "http://127.0.0.1:1234/myapis/"
-var loginURL = "https://evening-harbor-00200.herokuapp.com/myapis/"
+var loginURL = "http://127.0.0.1:1234/myapis/"
+// var loginURL = "https://evening-harbor-00200.herokuapp.com/myapis/"
 
 async function addLoginDetailsToDatabase(){
     wrongpasswordclass.style.display = "none";
@@ -41,19 +41,29 @@ async function addLoginDetailsToDatabase(){
         "Password" : dbpassword
     });
     console.log(signupdetails);
-    await fetch(loginURL+"signup/", {
-        method:"POST",
-        body:signupdetails,
-        headers:{
-            "Content-Type":"application/json"
-        }
-    }).then(res => res.json())
+    if(dbusername && dbemailid && dbpassword){
+        await fetch(loginURL+"signup/", {
+            method:"POST",
+            body:signupdetails,
+            headers:{
+                "Content-Type":"application/json"
+            }
+        }).then(res => {
+            document.getElementById("loginButton").click();
+            document.getElementById("signupsuccessful").style.display="block"
+            res.json()
+        })
+    }
+    else{
+        
+    }
     //console.log(res);
 }
 
 async function checkIfUserExist(){
-    wrongpasswordclass.style.display = "none";
+            wrongpasswordclass.style.display = "none";
             userdoesnotexistclass.style.display = "none";
+            document.getElementById("signupsuccessful").style.display="none"
     var myloginemailid = loginemailid.value;
     var myloginpassword = loginpassword.value;
     console.log(myloginemailid + " " + myloginpassword)
@@ -98,7 +108,6 @@ async function checkIfUserExist(){
 // check how we can do this for individual user
 function welcomeAfterAunthentication(userName){
     document.cookie = userName + ";path=/Content";
-
     window.location ="../Content/index.html"
 }
 
