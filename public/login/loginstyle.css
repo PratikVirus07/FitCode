@@ -144,6 +144,10 @@ span{
 		top:25vh;
 		left:44vw;
 	}
+	#signupsuccessful{
+		top:25vh;
+		left:44vw;
+	}
 
 }
 @media only screen and (max-width:1180px){
@@ -152,6 +156,10 @@ span{
 		left:44vw;
 	}
 	#wrongpasswordclass{
+		top:25vh;
+		left:44vw;
+	}
+	#signupsuccessful{
 		top:25vh;
 		left:44vw;
 	}
@@ -165,6 +173,10 @@ span{
 		top:25vh;
 		left:40vw;
 	}
+	#signupsuccessful{
+		top:25vh;
+		left:40vw;
+	}
 }
 @media only screen and (max-width:720px){
     #userdoesnotexistclass{
@@ -175,6 +187,10 @@ span{
 		top:25vh;
 		left:40vw;
 	}
+	#signupsuccessful{
+		top:25vh;
+		left:40vw;
+	}
 }
 @media only screen and (max-width:600px){
     #userdoesnotexistclass{
@@ -182,6 +198,10 @@ span{
 		left:35vw;
 	}
 	#wrongpasswordclass{
+		top:22vh;
+		left:35vw;
+	}
+	#signupsuccessful{
 		top:22vh;
 		left:35vw;
 	}
