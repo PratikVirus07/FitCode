@@ -69,7 +69,10 @@ async function addUserDetailsToDatabase(){
         headers:{
             "Content-Type":"application/json"
         }
-    }).then(res => res.json())
+    }).then(res =>{
+        //document.getElementById("givedetailsmodal").style.display = "none"
+        res.json();
+    })
 }
 
 

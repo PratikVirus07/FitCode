@@ -78,16 +78,16 @@ async function checkIfUserExist(){
             "Content-Type":"application/json"
         }
     }).then(res => {
-        console.log(res)
+        //console.log(res)
         let data= res.json();
-        console.log(data);
+        //console.log(data);
         return data;
         //console.log("1st promise")
         // /window.location ="success.html";
     }).then(res =>{
         let data= res;
         //console.log(data)
-        console.log(data.isAuthenticated);
+        //console.log(data.isAuthenticated);
         // console.log("2nd promise")
         var userName = data.userName
         if (data.isAuthenticated === "password match"){

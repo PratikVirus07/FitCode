@@ -14,7 +14,7 @@ body{
     background-position: center;
     /* background-attachment: fixed; */
     height: 100vh;
-    background-color: #e5dfdf;
+    background-color: whitesmoke;
 }
 
 .navbar{
@@ -184,7 +184,7 @@ body{
 
 .mainTextfitnessGoals{
     border: 1px solid #17574d;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: #17574d;
     width: 70vw;
     margin: 20px auto;
@@ -199,8 +199,11 @@ body{
 }
 
 .card{
-    background-color: #078492;
-    border-radius: 20px;
+    /* background-color: #078492; */
+    background-color: #706c61;
+    /* background-color: #8f8d88; */
+    /* background-color: #1f1c1c; */
+    border-radius: 10px;
     /* height: 55vh; */
 }
 
@@ -211,34 +214,38 @@ body{
 
 .fitnessGoalsContainer .container .row .card-title{
     border: 1px solid #ff896b;
-    border-radius: 20px;
+    border-radius: 10px;
     background : linear-gradient(to right, #e75c8a, #af7708);;
     font-size: 2rem;
     text-align: center;
 }
 
 .fitnessGoalsContainer .container .row .btn{
-    border: 1px solid #078d8f;
+    /* border: 1px solid #078d8f; */
+    border: 1px solid #e1f4f3;
     display: block;
     width:70%;
     margin:2px auto;
     border-radius: 20px;
-    background-color:#42e6a4;
+    /* background-color:#42e6a4; */
+    background-color: #e1f4f3;
     color: black;
     font-size: 1.2rem;
+    font-weight: 700;
     text-align: center;
 }
 
 .fitnessGoalsContainer .container .row .card-text{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: rgb(0, 0, 0);
+    /* color : #e1f4f3 */
 }
 
 
 .fitnessGoalsContainer .container .row .card-img-top{
     height:200px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .text-footer{
     color:#000000;
