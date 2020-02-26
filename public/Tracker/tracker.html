@@ -38,30 +38,90 @@
               </li> -->
             </ul>
           </div>
-      </div><
+      </div>
   </nav>
 
-<div class="mytracker">
   
-  <div class="trackertitle">
-    <h2>Know Your Food</h2>
+  <div class="welcomeClass">
+    <text>Hey, <span id="welcomeName"></span> Welcome!</text>
   </div>
-<!-- <div class="instructions">
-  <p><p>Enter what you have eaten today (Quantity and Food item) and calculate the macro nutrients as well according to your goal</p></p>
-</div> -->
-<div class="search-box">
-    <input class="search-txt" id="foodid" type="text" name="" placeholder="Which food did you take ?">
-    <a class="search-btn" href="#" id="foodsearchbuttonid" onclick="foodsearchbuttonidclicked()">
-        <i class="fa fa-search-plus" aria-hidden="true"></i>
-    </a>
-</div>
-<div id="resultdiv">
-    <div class="result">
-        <span>Total Calories (in kCal) : <p id="caloriesid"></p></span>
+  
+
+    <div class="dailyInformation">
+      <div class="heading">
+        <text>Your Daily Calorie Needs</text>
+      </div>
+      <div class="dailyResults">
+        <div class="container mytable">          
+          <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th>Nutrition</th>
+                <th>Value(in Gms)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Maintenance Calories</td>
+                <td class="resultValues" id="maintenanceCalorie"></td>
+              </tr>
+              <tr>
+                <td>Desired Calories</td>
+                <td class="resultValues" id="desiredCalorie"></td>
+              </tr>
+              <tr>
+                <td>Protien</td>
+                <td class="resultValues" id="desiredProtien"></td>
+              </tr>
+              <tr>
+                  <td>Carbohydrates</td>
+                  <td class="resultValues" id="desiredCarbs"></td>
+              </tr>
+              <tr>
+                  <td>Fat</td>
+                  <td class="resultValues" id="desiredFat"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dailyText">
+            <text>Your body needs <span id="desiredCalories"></span> calories daily to <span id="desiredGoal"></span></text>
+        </div>
+      </div> 
     </div>
 
-    <div class="container mytable">  
-        <h2>Nutrition Breakout</h2>         
+ <!-- start of exercise    -->
+<div class="exercisesId">
+
+  <div class="exerciseAreaHeading">
+    <text>Today's Exercise List : <span id="goalInExerciseHeading"></span> <span id="dateInExerciseHeading"></span> -- <span id="dayInExerciseHeading"></span></text>
+  </div>
+  <div class="container myexercisetable">          
+    <table class="table table-dark table-hover">
+      <tbody id="exerciseTableBody">
+  
+        </tbody>
+    </table>
+  </div>
+  
+</div>
+<!-- end of exercise -->
+ 
+
+
+<div class="exerciseAndFoodCalculator">
+    <div class="foodCalculator">
+      <div class="calorieHeading">
+        <text>Food Calorie Calculator</text>
+      </div>
+      <div class=calorieInput>
+        <input class="calorieInputArea" id="foodid"></input>
+        <button class="calorieInputButton" onclick="foodsearchbuttonidclicked()">Show Calories</button>
+      </div>
+      <div class="calorieAdd">
+        <button class="calorieAddButton" onclick="updateCaloriefromFood()" >Add to Today's Calorie</button>
+      </div>
+      <div class="container myCalorietable" id="myFoodTable">          
         <table class="table table-dark table-hover">
           <thead>
             <tr>
@@ -71,86 +131,90 @@
           </thead>
           <tbody>
             <tr>
-              <td>Quantity</td>
-              <td id="quantityid"></td>
+              <td>Serving Quantity</td>
+              <td class="resultValues" id="foodQuantity"></td>
             </tr>
             <tr>
               <td>Serving Unit</td>
-              <td id="servingunitid"></td>
+              <td class="resultValues" id="foodUnit"></td>
+            </tr>
+            <tr>
+              <td>Calories</td>
+              <td class="resultValues" id="foodCalorie"></td>
             </tr>
             <tr>
               <td>Protien</td>
-              <td id="protienid"></td>
+              <td class="resultValues" id="foodProtien"></td>
             </tr>
             <tr>
                 <td>Carbohydrates</td>
-                <td id="carbsid"></td>
+                <td class="resultValues" id="foodCarbs"></td>
             </tr>
             <tr>
-                <td>Total Fat</td>
-                <td id="totalfatid"></td>
-            </tr>
-            <tr>
-                <td>Saturated Fat</td>
-                <td id="saturatedfatid"></td>
-            </tr>
-            <tr>
-                <td>Sugar</td>
-                <td id="sugarid"></td>
+                <td>Fat</td>
+                <td class="resultValues" id="foodFat"></td>
             </tr>
           </tbody>
         </table>
       </div>
+    </div>
 
-</div>
-
-<div class="trackertitleexercise">
-    <h2>How much did you burn ?</h2>
-</div>
-
-<div class="myform">
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-              <!-- <label for="inputPassword4">Password</label> -->
-              <input type="text" class="form-control" id="exerciseid" placeholder="Exercise name">
-            </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <!-- <label for="inputEmail4">Email</label> -->
-            <input type="text" class="form-control" id="ageid" placeholder="Age">
-          </div>
-          <div class="form-group col-md-6">
-            <!-- <label for="inputPassword4">Password</label> -->
-            <div class="input-group mb-3">
-                <select class="custom-select" id="genderid">
-                  <option selected>Gender</option>
-                  <option>Male</option>
-                  <option>Female</option>
-                </select>
-            </div>
-          </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-              <!-- <label for="inputEmail4">Email</label> -->
-              <input type="text" class="form-control" id="heightid" placeholder="Height in cms">
-            </div>
-            <div class="form-group col-md-6">
-              <!-- <label for="inputPassword4">Password</label> -->
-              <input type="text" class="form-control" id="weightid" placeholder="Weight in kgs">
-            </div>
-        </div>
-        <a  class="btn btn-primary calcbutton" onclick="exercisebuttonclicked()">Calculate</a>
-      </form> 
-      <div id="exerciseresults">
-        <span>You have burnt </span><span id="exercisevaluecalories"></span><span> calories in </span><span id="exercisevaluetime"></span><span> minutes</span>
+    <div class="exerciseCalculator">
+      <div class="calorieHeading">
+        <text>Exercise Calorie Calculator</text>
       </div>
+      <div class="calorieInput">
+        <input class="calorieInputArea" id="exerciseid"></input>
+        <button class="calorieInputButton" onclick="exercisebuttonclicked()">Show Calories</button>
+      </div>
+      <div class="calorieAdd">
+        <button class="calorieAddButton" onclick="updateCaloriefromExercises()" >Add to Today's Calorie</button>
+      </div>
+      <!-- <button>Decrease Calories</button> -->
+      <div class="container myCalorietable" id="myExerciseTable">          
+        <table class="table table-dark table-hover">
+          <tbody>
+            <tr>
+              <td>Exercise Name</td>
+              <td class="resultValues" id="exerciseName"></td>
+            </tr>
+            <tr>
+              <td>Time Spent</td>
+              <td class="resultValues" id="exerciseTime"></td>
+            </tr>
+            <tr>
+              <td>Calorie burn</td>
+              <td class="resultValues" id="exerciseCalorieBurn"></td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="personalCalculation">
+      <div class="calorieHeading">
+        <text>Your Daily Calculation</text>
+      </div>
+      <div class="container myCalorietable">          
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th>Today's Total Calories</th>
+              <th id="totalDailyCalories"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="headingTD">Remaining Calories</td>
+              <td class="resultValues" id="remaningCalories"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 </div>
 
 
-</div>
+
     
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

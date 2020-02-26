@@ -51,146 +51,262 @@ body{
     padding: 5px 5px;
     border-radius: 10px;
 }
-.trackertitle{
+
+.welcomeClass{
     border: 1px solid #2f3640;
-    border-radius: 40px;
-    width:50vw;
+    width:40vw;
     text-align: center;
-    margin:25vh auto 5vh;
+    margin:20vh auto 5vh;
     background-color: #2f3640;
     color: silver;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    word-spacing: 2px;
     font-family: 'PT Sans', sans-serif;
 }
 
-.mytracker{
-    margin-top:13vh;
+#welcomeName{
+    color: #f7643f;
 }
 
-.search-box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #2f3640;
-    height: 50px;
+
+.dailyInformation .heading{
+    border: 1px solid #2f3640;
     border-radius: 40px;
-    padding: 10px;
-}
-
-.search-box:hover > .search-txt {
-    width: 240px;
-    padding: 0 6px;
-}
-   
-.search-box:hover > .search-btn {
-    background: white;
-    color: black;
-}
-
-.search-btn{
-    color: #e84118;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    color: white;
-    cursor: pointer;
-}
-
-.search-btn > i {
-    font-size: 30px;
-}
-
-.search-txt{
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
-    font-weight: bold;
-}
-
-#resultdiv{
-    display: none;
-}
-.result{
-    margin: 20vh auto 10vh;
-    width:300px;
-    font-size: 1.5rem;
-    font-weight: 700;
+    width:40vw;
     text-align: center;
-}
-
-#caloriesid{
-    font-size: 2rem;
-    color: #004445;
+    margin:10vh auto 5vh;
+    background-color: #2f3640;
+    color: silver;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .mytable{
     width:400px;
 }
 
-.trackertitleexercise{
-    border: 1px solid #2f3640;
-    border-radius: 40px;
-    width:50vw;
+.dailyText{
+    border: 1px solid #878e99;
     text-align: center;
-    margin:30vh auto 10vh;
+    margin:5vh auto;
+    width: 60vw;
+    font-size: 2rem;
     background-color: #2f3640;
     color: silver;
-    font-family: 'PT Sans', sans-serif; 
+    font-family: 'PT Sans', sans-serif;
 }
 
-.myform{
-    width:45vw;
-    border:1px solid #2f3640;
-    border-radius: 25px;
-    margin : 5px auto;
-    padding:25px;
+.exerciseAreaHeading{
+    border: 1px solid #2f3640;
     background-color: #2f3640;
-}
-
-#exerciseid{
-    width:30vw;
-    border: none;
-}
-
-.calcbutton{
-    background-color: #eb4d55;
-    color: #000;
-    border: none;
-    display: block;
-    margin:5px auto;
-}
-
-#exerciseresults{
-    display: none;
+    border-radius: 15px;
+    width: 60vw;
+    font-size: 1.7rem;
     text-align: center;
-    color: #eb4d55;
-    font-size: 1.8rem;
+    margin: 20px auto;
+    color:whitesmoke;
+}
+
+.myexercisetable{
+    width: 40vw;
+}
+
+.exerciseAndFoodCalculator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.calorieHeading{
+    border: 1px solid #2f3640;
+    background-color: #2f3640;
+    color: whitesmoke;
+    text-align: center;
+    max-width: 50vw;
+    font-size: 1.6rem;
+    margin:10px auto;
+}
+
+.calorieInput{
+    text-align: center;
+}
+
+.calorieInputArea{
+    border:1px solid red;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+.calorieInputArea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+
+  .calorieInputButton {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  
+  .calorieInputButton:hover {
+    background-color: #2f3640;
+    color: white;
+  }
+
+.myCalorietable{
+    width: 27vw;
+}
+
+
+.resultValues{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f7643f;
+}
+
+.headingTD{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f7643f;
+}
+
+#desiredCalories{
+    color: #f7643f;
+    font-weight: 700;
+}
+
+
+
+  .calorieAdd{
+      text-align: center;
+      margin: 5px;
+  }
+
+  .calorieAddButton{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    width:250px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+
+  .calorieAddButton:hover {
+    background-color: #2f3640;
+    color: white;
+  }
+
+.dailyExerciseHeading{
+    border: 1px solid red;
+    background-color: #2f3640;
+    width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    color:whitesmoke;
+}
+
+.exerciseList{
+    border:1px solid #2f3640;
+    width:500px;
+    margin:5px auto;
+    list-style: none;
+}
+
+.exerciseList li {
+    border: 1px solid red;
+
+}
+
+
+.myCard{
+    width: 28vw;
+    margin: 5px auto
+}
+
+
+@media only screen and (max-width : 960px){
+    .dailyInformation .heading{
+        width:60vw;
+        font-size: 1.6rem;
+    }
+    .dailyText{
+        width: 70vw;
+        font-size: 1.8rem;
+    }
+    .exerciseAreaHeading{
+        width: 70vw;
+        font-size: 1.6rem;
+    }
+    .myexercisetable{
+        width: 60vw;
+    }
+    .exerciseAndFoodCalculator{
+        display: flex;
+        flex-direction: column;
+    }
+    .myCalorietable{
+        width: 50vw;
+    }
 }
 
 @media only screen and (max-width : 720px){
-    #exerciseresults{
+    .dailyInformation .heading{
+        width:70vw;
+        font-size: 1.6rem;
+    }
+    .dailyText{
+        width: 80vw;
+        font-size: 1.7rem;
+    }
+    .exerciseAreaHeading{
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+    .myCalorietable{
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width : 480px){
+    .dailyInformation .heading{
+        width:80vw;
         font-size: 1.4rem;
     }
-    .trackertitle{
-        font-size: 1.6rem;
-        width:70vw;
+    .mytable{
+        width:80vw;
     }
-    .trackertitleexercise{
+    .dailyText{
+        width: 80vw;
         font-size: 1.6rem;
-        width:70vw;
+    }
+    .myexercisetable{
+        width: 80vw;
+    }
+    .myCalorietable{
+        width: 80vw;
     }
 }
 

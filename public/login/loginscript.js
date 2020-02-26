@@ -60,17 +60,16 @@ async function addLoginDetailsToDatabase(){
 }
 
 async function checkIfUserExist(){
-            wrongpasswordclass.style.display = "none";
-            userdoesnotexistclass.style.display = "none";
-            document.getElementById("signupsuccessful").style.display="none"
+    wrongpasswordclass.style.display = "none";
+    userdoesnotexistclass.style.display = "none";
+    document.getElementById("signupsuccessful").style.display="none"
     var myloginemailid = loginemailid.value;
     var myloginpassword = loginpassword.value;
     console.log(myloginemailid + " " + myloginpassword)
     let loginbody = JSON.stringify({
-        "EmailID":myloginemailid,
-        "Password":myloginpassword
+    "EmailID":myloginemailid,
+    "Password":myloginpassword
     })
-    //console.log(loginbody)
      let res = await fetch(loginURL+"login/", {
         method:"POST",
         body:loginbody,
@@ -106,7 +105,8 @@ async function checkIfUserExist(){
 }
 // check how we can do this for individual user
 function welcomeAfterAunthentication(userName){
-    document.cookie = userName + ";path=/Content";
+    document.cookie = userName + ";path=/";
+    //cookieParser.JSONCookie(userName)
     window.location ="../Content/index.html"
 }
 

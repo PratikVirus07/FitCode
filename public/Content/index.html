@@ -46,131 +46,29 @@
     <a href="CalorieCalculator/calorieindex.html" class="btn btn-home animated slideInUp">Check Your BMR</a> -->
   </div>
 
-  <div class="mycardsSection">
+  <div class="mycardsSection" id="mycardsID">
 
-    <div class="cards detailsCard">
+    <div class="cards detailsCard" id="newUserCard">
       <div class="cardText">
         <span>Give Your Details</span><br>
+        <span>(New User)</span><br>
         <a href="#" data-toggle="modal" data-target="#givedetailsmodal">START</a>
       </div>
     </div>
-
-    <div class="cards goalCard">
+    
+    <!-- <div class="cards goalCard">
       <div class="cardText">
         <span>Choose Your Goal</span><br>
         <a href="#fitnessgoalId">START</a>
       </div>
-    </div>
+    </div> -->
 
-    <div class="cards contactCard">
+    <div class="cards contactCard" id="existingUserCard">
       <div class="cardText">
-        <span>Tracker</span><br>
+        <span>Continue Your Journey</span><br>
+        <span>(Existing User)</span><br>
         <a href="../Tracker/tracker.html">START</a>
       </div>
-    </div>
-
-  </div>
-
-  <div class="fitnessGoalsContainer" id="fitnessgoalId">
-
-    <div class="mainTextfitnessGoals">
-      <h1>Choose Your Fitness Goal</h1>
-    </div>
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="../HomepageImages/musclebuilding.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Muscle Gain</h5>
-              <p class="card-text">If you goal is to gain muscle and increase its size, click below to start your Muscle Building Phase. The average time to see results are 2-3 months</p>
-              <a href="../FinalPages/musclegain.html" class="btn btn-primary" id="musclegainbutton">Start Your Journey</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-footer">The last three or four reps is what makes the muscle grow</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="../HomepageImages/fatloss.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Fat Loss</h5>
-              <p class="card-text">If you goal is to lose fat from all over the body and dercrease your fat percentage, click below to start your fat loss phase. The average time to see results are 4-5 months</p>
-              <a href="../FinalPages/fatloss.html" class="btn btn-primary">Start Your Journey</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-footer">All progress takes place outside the comfort zone.</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="../HomepageImages/fitimage.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Be Fit</h5>
-              <p class="card-text">If you goal is just to be fit and have a good physique and look good, click below to start your be fit phase. The average time to see results are 2-3 months</p>
-              <a href="../FinalPages/befit.html" class="btn btn-primary">Start Your Journey</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-footer">All our dreams can come true if we have the courage to pursue them.</small>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="../HomepageImages/stronger.jpe" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Get Stronger</h5>
-              <p class="card-text">If you goal is to get stronger and lift more volume of weights, click below to start your Get Stronger Phase. The average time to see results are 3-4 months.</p>
-              <a href="../FinalPages/getstronger.html" class="btn btn-primary">Start Your Journey</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-footer">If you think lifting is dangerous, try being weak. Being weak is dangerous</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="https://content.active.com/Assets/Active.com+Content+Site+Digital+Assets/Running/Galleries/Building+Endurance/slide+2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Endurance</h5>
-              <p class="card-text">If you goal is to improve athletic skills, Endurance and flexibilty click below to start your Athletic and endurance Phase. The average time to see results are 1-2 months.</p>
-              <a href="../FinalPages/Endurance.html" class="btn btn-primary">Start Your Journey</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-footer">Success is walking from failure to failure with no loss of enthusiasm.</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="card">
-            <img src="https://www.elitefts.com/wp/wp-content/uploads/2017/08/HDT-.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Conditioning</h5>
-              <p class="card-text">If you goal is to improve body conditioning for stage preparation, click below to start your body conditioning Phase. The average time to see results are 1-2 months</p>
-              <a href="../FinalPages/conditioning.html" class="btn btn-primary">Start Your Journey</a>
-            </div>
-            <div class="card-footer">
-              <small class="text-footer">You must expect great things of yourself before you can do them.</small>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
     </div>
 
   </div>
@@ -253,20 +151,20 @@
           <div class="col-md-3 col-sm-6 col-xs-12 segment">
             <h2>Important Links</h2>
             <ul class="footerlinks">
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Channel</a></li>
+              <li><a href="https://www.townscript.com/in/india/sports-fitness">Events</a></li>
+              <li><a href="https://support.google.com/fit/?hl=en#topic=6075053">Support</a></li>
+              <li><a href="https://careers.google.com/teams/">Careers</a></li>
+              <li><a href="https://blogonyourown.com/best-fitness-blogs/">Blogs</a></li>
+              <li><a href="https://creatoracademy.youtube.com/page/lesson/fitness">Channel</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 segment">
             <h2>Follow us</h2>
             <p class="footerfitcodetext">Please Follow us at our Social Media Channels to show your love and support</p>
-            <a class="socialmedia" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="socialmedia"  href="#"><i class="fa fa-twitter"></i></a>
-            <a  class="socialmedia" href="#"><i class="fa fa-linkedin"></i></a>
-            <a class="socialmedia" href="#"><i class="fa fa-instagram"></i></a>
+            <a class="socialmedia" href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+            <a class="socialmedia"  href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+            <a  class="socialmedia" href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+            <a class="socialmedia" href="https://instagram.com"><i class="fa fa-instagram"></i></a>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 segment">
             <h2>Our NewsLetter</h2>
@@ -336,14 +234,6 @@
               </div>
         </div>
           <div class="form-group">
-            <!-- <label for="username">User Name</label> -->
-            <input type="text" class="form-control" id="username" placeholder="Enter User Name">
-          </div>
-          <div class="form-group">
-            <!-- <label for="name">Name</label> -->
-            <input type="text" class="form-control" id="fullname" placeholder="Enter Your Name">
-          </div>
-          <div class="form-group">
             <!-- <label for="height">Height</label> -->
             <input type="text" class="form-control" id="height" placeholder="Height in cms">
           </div>
@@ -368,6 +258,20 @@
               <option value="1.725">Very Active : Intense Exercise 6-7 times per week</option>
               <option value="1.9">Extra Active : Very Intense exercise daily, or physical job</option>
             </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <!-- <label class="input-group-text" for="activitylevel">Activity</label> -->
+          </div>
+          <select class="custom-select" id="goalselection">
+            <option selected>What's your Goal</option>
+            <option value="1.2">Muscle Gain</option>
+            <option value="0.8">Fat Loss</option>
+            <option value="1">Be Fit</option>
+            <option value="0.9">Body Conditioning</option>
+            <option value="1.4">Get Stronger</option>
+            <option value="1">Endurance</option>
+          </select>
         </div>
     
         </form>

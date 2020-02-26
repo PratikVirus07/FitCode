@@ -88,7 +88,7 @@ body{
     justify-content: space-around;
     height: 70vh;
     width: 90vw;
-    margin:50vh auto 10vh;
+    margin:50vh auto 100px;
 }
 .cards{
     width:33vw;
@@ -149,10 +149,12 @@ body{
 }
 
 .mymodal-header{
-    background: linear-gradient(to right, #ff105f, #ffad06);
+    /* background: linear-gradient(to right, #ff105f, #ffad06); */
+    background-color: #f75e50;
 }
 .mymodal-footer{
-    background: linear-gradient(to right, #ff105f, #ffad06);
+    /* background: linear-gradient(to right, #ff105f, #ffad06); */
+    background-color: #f75e50;
 }
 .mymodal-title{
     display: block;
@@ -164,10 +166,12 @@ body{
     letter-spacing: 3px;
 }
 .mymodal-body{
-    background: linear-gradient(to right, #1d8f6b  , #185a9d);
+    /* background: linear-gradient(to right, #1d8f6b  , #185a9d); */
+    background-color: #0c7b93;
 }
 .mymodal-footer button{
-    background: linear-gradient(to right, #1d8f6b  , #185a9d);
+    /* background: linear-gradient(to right, #1d8f6b  , #185a9d); */
+    background-color: #0c7b93;
     font-size: 1.2rem;
     font-weight: 600;
     font-family: 'Flamenco', cursive;
@@ -465,6 +469,10 @@ body{
     .mainTextfitnessGoals h1{
         font-size: 2rem;
     }
+    .mycardsSection{
+        height: 70vh;
+        width: 80vw;
+    }
 }
 
 @media only screen and (max-width:720px){
@@ -475,13 +483,10 @@ body{
         font-size: 2rem;
     }
     .mycardsSection{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
         height: 70vh;
         width: 90vw;
-        margin:80vh auto 60vh;
     }
+    
     .cards{
         width:90vw;
     }

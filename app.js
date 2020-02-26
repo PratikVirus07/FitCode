@@ -1,5 +1,6 @@
 const express =  require("express");
 const app = express();
+var cookieParser = require('cookie-parser')
 const mongodb = require("mongodb");
 const mongoclient = mongodb.MongoClient;
 const routes = require('./routes/routes.js');
@@ -10,6 +11,7 @@ const port = process.env.PORT || 1234;
 
 const db_uri = "mongodb+srv://pratik123:test123@cluster0-5ymnd.mongodb.net/test?retryWrites=true&w=majority";
 
+app.use(cookieParser())
 app.use(express.json())
 app.use(express.static('public'))
 
